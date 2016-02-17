@@ -1,0 +1,20 @@
+"Energy Budget Tool for you home"
+
+Energy bills are increasing worldwide as governmental agencies are increasing energy prices to discourage consumption and energy waste. However, it is very difficult to track, analyze, and budget daily energy use with existing tools.
+
+In this exploratory analysis I downloaded two datasets:
+1) Measurements of electric power consumption in one household in Clamart, France with a one-minute sampling rate over a period of almost 4 years (from Dec 2006 to Nov 2010). Source:  Lichman, M. (2013). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science. 
+
+2) Weather data from the closest weather station over the same period with 30 min sampling time. Source: NOAA custom generated file. http://www.ncdc.noaa.gov/orders/isd/5921126947758dat.txt
+
+I show that there are time-dependent patterns in the total energy consumption (plot n1) whereby nighttime consumption is lower as well as afternoon consumption. The power use spikes at 7am and around dinnertime (in France 7-9pm). These patterns can be learned from the data and a model can be built to predict future energy use and cost (knowing utility tariffs).
+
+I also formulated the hypothesis that energy use is a function of weather, therefore I downloaded from another source temperature data collected from a weather station nearby (Paris Orly at 20 km from the site). I show in plot n2 that there is an inverse relationship between energy use and temperature, that is at lower average daily temperatures the energy use is larger (heating is probably generated with electricity in this house and there is likely no cooling). This suggests that using additional sources of information, readily available online, the model can be improved.
+
+The present project aims at providing a daily energy budget tool for home owners. Gathering data from smart meters (or smart thermostats if available), energy utilities (aggregated electricity forecast and electricity prices), and weather stations, and utilizing machine learning algorithms, this tool will calculate a projected monthly bill forecast that will be updated daily to avoid home owners surprises at the end of the month.
+
+
+
+
+
+
